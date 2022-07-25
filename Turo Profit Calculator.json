@@ -1,0 +1,1307 @@
+{
+   "WFWorkflowMinimumClientVersionString": "900",
+   "WFWorkflowMinimumClientVersion": 900,
+   "WFWorkflowIcon": {
+      "WFWorkflowIconStartColor": 463140863,
+      "WFWorkflowIconGlyphNumber": 59452
+   },
+   "WFWorkflowClientVersion": "1146.16",
+   "WFWorkflowOutputContentItemClasses": [],
+   "WFWorkflowHasOutputFallback": false,
+   "WFWorkflowActions": [
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "30"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "30"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "7"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "10"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "3"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "5"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "1"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "1"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "848CB145-CE30-45FD-B89C-7683509F806F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "848CB145-CE30-45FD-B89C-7683509F806F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Multi-Day Percentages"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": "0.05",
+            "UUID": "CCC827EE-B620-497A-A8DA-0838B9ABA88C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "CCC827EE-B620-497A-A8DA-0838B9ABA88C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Number"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Early Bird Percentage"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionAllowsNegativeNumbers": false,
+            "UUID": "47054A16-5EF0-49EE-9B27-C56EEF77D799",
+            "WFInputType": "Number",
+            "WFAskActionPrompt": "Daily Rate:"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": {
+               "Value": {
+                  "OutputUUID": "47054A16-5EF0-49EE-9B27-C56EEF77D799",
+                  "Type": "ActionOutput",
+                  "OutputName": "Provided Input"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "4A584557-1CD9-4C8B-B639-FE48E2833CA3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "4A584557-1CD9-4C8B-B639-FE48E2833CA3",
+                  "Type": "ActionOutput",
+                  "OutputName": "Number"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Daily Rate"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.dictionary",
+         "WFWorkflowActionParameters": {
+            "WFItems": {
+               "Value": {
+                  "WFDictionaryFieldValueItems": [
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "60 Plan"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "60"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "75 Plan"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "75"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "80 Plan"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "80"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "85 Plan"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "85"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     },
+                     {
+                        "WFItemType": 3,
+                        "WFKey": {
+                           "Value": {
+                              "string": "90 Plan"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        },
+                        "WFValue": {
+                           "Value": {
+                              "string": "90"
+                           },
+                           "WFSerializationType": "WFTextTokenString"
+                        }
+                     }
+                  ]
+               },
+               "WFSerializationType": "WFDictionaryFieldValue"
+            },
+            "UUID": "592B63A8-0BA2-4950-9F9D-CE930529B251"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.choosefromlist",
+         "WFWorkflowActionParameters": {
+            "WFChooseFromListActionPrompt": "Select your protection plan:",
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "592B63A8-0BA2-4950-9F9D-CE930529B251",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "71CED6AA-EBD2-4E0A-A61B-5FB2EC6E314C"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "71CED6AA-EBD2-4E0A-A61B-5FB2EC6E314C",
+                  "Type": "ActionOutput",
+                  "OutputName": "Chosen Item"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": "0.01",
+            "UUID": "C1DE17FF-33FE-4FCB-9837-95119B8A6DB4",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "C1DE17FF-33FE-4FCB-9837-95119B8A6DB4",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Protection Plan"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionPrompt": "Trip Start",
+            "WFInputType": "Date and Time",
+            "UUID": "75FCAF4E-CAE3-4FD3-980A-7E7A30530DA0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionPrompt": "Trip End",
+            "WFInputType": "Date and Time",
+            "UUID": "D497201D-37FF-4E37-B850-442B405EB53B"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.date",
+         "WFWorkflowActionParameters": {
+            "WFDateActionDate": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "D497201D-37FF-4E37-B850-442B405EB53B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFDateActionMode": "Specified Date",
+            "UUID": "89403AFB-DC81-4025-933A-0A753425FAC6"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "89403AFB-DC81-4025-933A-0A753425FAC6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Date"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFTimeUntilFromDate": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "75FCAF4E-CAE3-4FD3-980A-7E7A30530DA0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "5883D5B7-4CFD-4084-8EEB-196480F40F1A",
+            "WFTimeUntilUnit": "Total Time"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "5883D5B7-4CFD-4084-8EEB-196480F40F1A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Time Between Dates"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Total Time"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "D497201D-37FF-4E37-B850-442B405EB53B",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFTimeUntilFromDate": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "75FCAF4E-CAE3-4FD3-980A-7E7A30530DA0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "43B6E153-35A7-476F-AF6F-282975BEDFC3",
+            "WFTimeUntilUnit": "Days"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "43B6E153-35A7-476F-AF6F-282975BEDFC3",
+                  "Type": "ActionOutput",
+                  "OutputName": "Time Between Dates"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Days"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.ask",
+         "WFWorkflowActionParameters": {
+            "WFAskActionPrompt": "Date trip was booked:",
+            "WFInputType": "Date",
+            "UUID": "AE2E003D-95DD-4F4C-B8E5-6BDB80CE4E3A"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "AE2E003D-95DD-4F4C-B8E5-6BDB80CE4E3A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Provided Input"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Date Booked"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.text.match",
+         "WFWorkflowActionParameters": {
+            "WFMatchTextPattern": "[hour]",
+            "text": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Total Time",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "8546B928-D95E-449A-8F38-7EBA5A6FB942"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "8546B928-D95E-449A-8F38-7EBA5A6FB942",
+                     "Type": "ActionOutput",
+                     "OutputName": "Matches"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "GroupingIdentifier": "16B03AD2-6633-4DC1-A187-EC110CE762BF",
+            "WFCondition": 100
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.calculateexpression",
+         "WFWorkflowActionParameters": {
+            "Input": {
+               "Value": {
+                  "string": "\uFFFC+1",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Days",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "A37A6626-5101-40FE-9761-726EB46B1A00"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "16B03AD2-6633-4DC1-A187-EC110CE762BF",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": {
+               "Value": {
+                  "VariableName": "Days",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "587CE2BD-63CC-4B42-AA4F-6FBF7675E52D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "16B03AD2-6633-4DC1-A187-EC110CE762BF",
+            "UUID": "7185C0D5-0433-4AD2-91D7-4F56FBD76394"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.detect.number",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "7185C0D5-0433-4AD2-91D7-4F56FBD76394",
+                  "Type": "ActionOutput",
+                  "OutputName": "If Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "1ADB4FAD-9985-48EE-8FF2-A9D9307642DE"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1ADB4FAD-9985-48EE-8FF2-A9D9307642DE",
+                  "Type": "ActionOutput",
+                  "OutputName": "Numbers"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Total Days"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
+         "WFWorkflowActionParameters": {
+            "Text": {
+               "Value": {
+                  "string": "The vehicle will be rented for \uFFFC days.",
+                  "attachmentsByRange": {
+                     "{31, 1}": {
+                        "VariableName": "Total Days",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Daily Rate",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Total Days",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "D7153494-BFED-4D51-99CD-5D4C2FCB47DC",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": {
+               "Value": {
+                  "OutputUUID": "D7153494-BFED-4D51-99CD-5D4C2FCB47DC",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "835E30F1-D63F-4E83-A39B-1779D58C5A35"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "835E30F1-D63F-4E83-A39B-1779D58C5A35",
+                  "Type": "ActionOutput",
+                  "OutputName": "Number"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Pre-Discount Total"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "EB052D73-1C2E-4BD8-85AA-844B48B8B3F1",
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "VariableName": "Total Days",
+                     "Type": "Variable"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFNumberValue": "30",
+            "WFCondition": 2
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Multi-Day Percentages",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "FA691C4E-BD56-4AA8-ADE3-0BB4F0264457",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": "30"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FA691C4E-BD56-4AA8-ADE3-0BB4F0264457",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": "0.01",
+            "UUID": "E456AAC8-1BB5-4611-9BE4-AA7B3AF33B3F",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "EB052D73-1C2E-4BD8-85AA-844B48B8B3F1",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "7BB2B14E-37E1-49B9-A47C-839301AE56C5",
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "VariableName": "Total Days",
+                     "Type": "Variable"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFNumberValue": "7",
+            "WFCondition": 3
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Multi-Day Percentages",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "BE934946-48E0-4901-A525-B7CB00EAFE66",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": "7"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "BE934946-48E0-4901-A525-B7CB00EAFE66",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": "0.01",
+            "UUID": "6070F6BC-4C55-4491-89B2-3941E4A6F66B",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "7BB2B14E-37E1-49B9-A47C-839301AE56C5",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "44D2AB07-85A8-4499-8671-AB488BAC17A5",
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "VariableName": "Total Days",
+                     "Type": "Variable"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFNumberValue": "3",
+            "WFCondition": 3
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.getvalueforkey",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Multi-Day Percentages",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "D66B8EB7-F90C-4DE5-B15E-80884B2F997D",
+            "WFGetDictionaryValueType": "Value",
+            "WFDictionaryKey": "3"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "D66B8EB7-F90C-4DE5-B15E-80884B2F997D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Dictionary Value"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": "0.01",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "44D2AB07-85A8-4499-8671-AB488BAC17A5",
+            "UUID": "9F096347-158A-4118-AF5C-76B3B4745745"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "7BB2B14E-37E1-49B9-A47C-839301AE56C5",
+            "UUID": "D756AE6A-C1E3-41CE-AEE3-B394848825CC"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "EB052D73-1C2E-4BD8-85AA-844B48B8B3F1",
+            "UUID": "D5FB1408-E830-41E9-8432-5CB44BE8F59D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": {
+               "Value": {
+                  "OutputUUID": "D5FB1408-E830-41E9-8432-5CB44BE8F59D",
+                  "Type": "ActionOutput",
+                  "OutputName": "If Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "8B333486-20C7-46E6-B5B5-85DD8A20C7FB"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "8B333486-20C7-46E6-B5B5-85DD8A20C7FB",
+                  "Type": "ActionOutput",
+                  "OutputName": "Number"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Multi-Day Discount"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Multi-Day Discount",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Daily Rate",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "93415235-6AB5-4C29-B000-FC8558F30A6A",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "93415235-6AB5-4C29-B000-FC8558F30A6A",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Total Days",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "1483F2B6-AC8C-46EE-A900-4C5FCF9D45B8",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "1483F2B6-AC8C-46EE-A900-4C5FCF9D45B8",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Total Multi-Day Discount"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatCurrencyIntent",
+         "WFWorkflowActionParameters": {
+            "amount": {
+               "Value": {
+                  "VariableName": "Total Multi-Day Discount",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "9297EFCA-F0E5-400C-AE68-067615994251"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
+         "WFWorkflowActionParameters": {
+            "Text": {
+               "Value": {
+                  "string": "The guest will receive a multi-day discount of  \uFFFC.",
+                  "attachmentsByRange": {
+                     "{48, 1}": {
+                        "OutputUUID": "9297EFCA-F0E5-400C-AE68-067615994251",
+                        "Type": "ActionOutput",
+                        "OutputName": "Amount Formatted as Currency"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Daily Rate",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Early Bird Percentage",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "FDC07731-E7D3-4CFD-A79B-76A71E03B506",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FDC07731-E7D3-4CFD-A79B-76A71E03B506",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Early Bird Discount"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Early Bird Discount",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Total Days",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "7C6C855A-073E-4361-AA55-CB12DD636928",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatCurrencyIntent",
+         "WFWorkflowActionParameters": {
+            "amount": {
+               "Value": {
+                  "OutputUUID": "7C6C855A-073E-4361-AA55-CB12DD636928",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "currency": {
+               "code": "USD",
+               "displayString": "USD — US Dollar",
+               "subtitleString": "United States",
+               "identifier": "USD"
+            },
+            "UUID": "FB1DB32C-C3F7-4313-9460-D1D466A5029D"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FB1DB32C-C3F7-4313-9460-D1D466A5029D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Amount Formatted as Currency"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFVariableName": "Total Early Bird Discount"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.gettimebetweendates",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "VariableName": "Date Booked",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "WFTimeUntilFromDate": {
+               "Value": {
+                  "string": "\uFFFC",
+                  "attachmentsByRange": {
+                     "{0, 1}": {
+                        "OutputUUID": "75FCAF4E-CAE3-4FD3-980A-7E7A30530DA0",
+                        "Type": "ActionOutput",
+                        "OutputName": "Provided Input"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            },
+            "UUID": "66748311-06DA-48E0-A891-4643BE2F1402",
+            "WFTimeUntilUnit": "Days"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "WFNumberActionNumber": {
+               "Value": {
+                  "OutputUUID": "66748311-06DA-48E0-A891-4643BE2F1402",
+                  "Type": "ActionOutput",
+                  "OutputName": "Time Between Dates"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "C8B698D2-555C-4E12-88D1-224FA7E1ACC0"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "5F4AD9B7-7EE2-4547-8257-551852B6E485",
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "C8B698D2-555C-4E12-88D1-224FA7E1ACC0",
+                     "Type": "ActionOutput",
+                     "OutputName": "Number"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "WFControlFlowMode": 0,
+            "WFNumberValue": "7",
+            "WFCondition": 2
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Total Early Bird Discount",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "OutputUUID": "FB1DB32C-C3F7-4313-9460-D1D466A5029D",
+                  "Type": "ActionOutput",
+                  "OutputName": "Amount Formatted as Currency"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "5033AC6A-3AF6-421C-8F74-65EF87DFFDBF"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Pre-Discount Total",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "OutputUUID": "5033AC6A-3AF6-421C-8F74-65EF87DFFDBF",
+                  "Type": "ActionOutput",
+                  "OutputName": "Calculation Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "B1EA17D2-9379-4AC5-9F59-5757D3E4D4DF",
+            "WFMathOperation": "-"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
+         "WFWorkflowActionParameters": {
+            "Text": {
+               "Value": {
+                  "string": "Your guest will also receive and early-bride discount of \uFFFC for booking more than 7 days in advance.",
+                  "attachmentsByRange": {
+                     "{57, 1}": {
+                        "VariableName": "Total Early Bird Discount",
+                        "Type": "Variable"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "5F4AD9B7-7EE2-4547-8257-551852B6E485",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "VariableName": "Pre-Discount Total",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Total Multi-Day Discount",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "A00DB986-194F-457F-B626-D63C67A27995",
+            "WFMathOperation": "-"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "5F4AD9B7-7EE2-4547-8257-551852B6E485",
+            "UUID": "FEF173F2-6BE5-4BE0-94D4-61F91F830CB2"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.math",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "FEF173F2-6BE5-4BE0-94D4-61F91F830CB2",
+                  "Type": "ActionOutput",
+                  "OutputName": "If Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "WFMathOperand": {
+               "Value": {
+                  "VariableName": "Protection Plan",
+                  "Type": "Variable"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "D9AEF5AC-7E5E-460C-B843-02CAD97427F6",
+            "WFMathOperation": "×"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.showresult",
+         "WFWorkflowActionParameters": {
+            "Text": {
+               "Value": {
+                  "string": "Your earnings for this trip will be $\uFFFC.",
+                  "attachmentsByRange": {
+                     "{37, 1}": {
+                        "OutputUUID": "D9AEF5AC-7E5E-460C-B843-02CAD97427F6",
+                        "Type": "ActionOutput",
+                        "OutputName": "Calculation Result"
+                     }
+                  }
+               },
+               "WFSerializationType": "WFTextTokenString"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.number",
+         "WFWorkflowActionParameters": {
+            "UUID": "F97622CE-6A27-4840-BB4F-D179208A4F1F"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.setvariable",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Value": {
+                  "OutputUUID": "F97622CE-6A27-4840-BB4F-D179208A4F1F",
+                  "Type": "ActionOutput",
+                  "OutputName": "Number"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            }
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFInput": {
+               "Type": "Variable",
+               "Variable": {
+                  "Value": {
+                     "OutputUUID": "F97622CE-6A27-4840-BB4F-D179208A4F1F",
+                     "Type": "ActionOutput",
+                     "OutputName": "Number"
+                  },
+                  "WFSerializationType": "WFTextTokenAttachment"
+               }
+            },
+            "GroupingIdentifier": "BE189E27-5D67-4BF6-A087-D651FF3DD070",
+            "WFControlFlowMode": 0
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "GroupingIdentifier": "BE189E27-5D67-4BF6-A087-D651FF3DD070",
+            "WFControlFlowMode": 1
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "is.workflow.actions.conditional",
+         "WFWorkflowActionParameters": {
+            "WFControlFlowMode": 2,
+            "GroupingIdentifier": "BE189E27-5D67-4BF6-A087-D651FF3DD070",
+            "UUID": "FA381384-6A2B-4CD5-9891-E36310FC0367"
+         }
+      },
+      {
+         "WFWorkflowActionIdentifier": "com.sindresorhus.Actions.FormatCurrencyIntent",
+         "WFWorkflowActionParameters": {
+            "amount": {
+               "Value": {
+                  "OutputUUID": "FA381384-6A2B-4CD5-9891-E36310FC0367",
+                  "Type": "ActionOutput",
+                  "OutputName": "If Result"
+               },
+               "WFSerializationType": "WFTextTokenAttachment"
+            },
+            "UUID": "2914DFBC-682B-43D6-BC30-8297A467CCE9"
+         }
+      }
+   ],
+   "WFWorkflowInputContentItemClasses": [
+      "WFAppStoreAppContentItem",
+      "WFArticleContentItem",
+      "WFContactContentItem",
+      "WFDateContentItem",
+      "WFEmailAddressContentItem",
+      "WFGenericFileContentItem",
+      "WFImageContentItem",
+      "WFiTunesProductContentItem",
+      "WFLocationContentItem",
+      "WFDCMapsLinkContentItem",
+      "WFAVAssetContentItem",
+      "WFPDFContentItem",
+      "WFPhoneNumberContentItem",
+      "WFRichTextContentItem",
+      "WFSafariWebPageContentItem",
+      "WFStringContentItem",
+      "WFURLContentItem"
+   ],
+   "WFWorkflowImportQuestions": [],
+   "WFWorkflowTypes": [
+      "NCWidget"
+   ],
+   "WFQuickActionSurfaces": [],
+   "WFWorkflowHasShortcutInputVariables": false
+}
